@@ -1,0 +1,25 @@
+<html><head> 
+    <title>Eventos</title>
+</head>
+<body>
+<div id="cliqueame">
+    ¡Cliqueame!
+</div>
+    </body>
+    <script>
+    var el = document.getElementById('cliqueame');
+
+    el.addEventListener('click', modificarTexto);
+    
+  //  function modificarTexto() {
+  //      var t2 = document.getElementById('cliqueame');
+  //      t2.textContent = "cliqueado"        
+  //  }
+
+    function modificarTexto(e) {
+        e.target.textContent = "cliqueado";
+    }
+    </script>
+
+
+</html>
